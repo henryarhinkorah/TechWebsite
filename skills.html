@@ -7,6 +7,7 @@
     <title>Skills</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <style>
         body, html {
             margin: 0;
@@ -54,6 +55,7 @@
             margin-right: 40px;
         }
 
+
         .skillsContainer {
             flex: 1;
             display: flex;
@@ -68,6 +70,11 @@
             gap: 20px;
             width: 100%;
             max-width: 800px;
+        }
+
+        .active {
+            text-decoration: underline;
+            color: blue;
         }
 
         .skillBox {
@@ -105,17 +112,6 @@
             text-decoration: none;
             font-size: 18px;
             text-align: center;
-        }
-
-        .fas.fa-briefcase {
-            font-size: 24px;
-            color: black;
-            margin-left: 10px;
-        }
-
-        .active {
-            text-decoration: underline;
-            color: blue;
         }
     </style>
 </head>
@@ -168,8 +164,6 @@
                     <i class="fas fa-database"></i>
                     <span>SQL</span>
                 </div>
-                
-                
                 <div class="skillBox">
                     <i class="fab fa-python"></i>
                     <span>Python</span>
