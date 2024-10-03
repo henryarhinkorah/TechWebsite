@@ -98,11 +98,7 @@
             margin-left: 20px;
         }
 
-        .fas.fa-briefcase {
-            font-size: 24px;
-            color: black;
-            margin-left: 50px;
-        }
+      
 
         .active {
             text-decoration: underline;
@@ -194,7 +190,7 @@
             const currentPage = window.location.pathname.split('/').pop();
             
             navLinks.forEach(link => {
-                if (link.getAttribute('href') === currentPage) {
+                if (link.getAttribute('href') === currentPage || (currentPage === '' && link.getAttribute('href') === 'index.html'))  {
                     link.classList.add('active');
                 }
             });

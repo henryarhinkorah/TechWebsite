@@ -41,8 +41,9 @@
 .fas.fa-briefcase {
     font-size: 24px;
     color: black;
-    margin-left: 50px;
+    margin-left: 20px;
 }
+
 
 .active {
     text-decoration: underline;
