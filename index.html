@@ -23,7 +23,8 @@
             flex-direction: column;  
             justify-content: center;
             align-items: center;
-            
+            padding: 5%;
+            box-sizing: border-box;
         }
         .picture {
             width: 30%; 
@@ -35,29 +36,69 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-    
+            animation-name: animationPic;
+            position: relative;
+            animation-duration: 1s; 
+            z-index: -1;
+           
         }
-        .introContainer {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 0px;
-            padding: 0 20px;
+
+        @keyframes animationPic{
+            0%   { top:-20px; opacity: 0%;}    
+            100% { top:0px; opacity: 100%;}    
         }
+        @keyframes animationHi{
+            0%   { top:20px; opacity: 0%;}    
+            100% { top:0px; opacity: 100%;}    
+        }
+        @keyframes IamAnimation{
+            0%   { top:20px; opacity: 0%;}     
+            100% { top:0px; opacity: 100%;}  
+        }
+        @keyframes githubButtonAnimation{
+            0%   { opacity: 0%;}     
+            100% {  opacity: 100%;}  
+        }
+      
 
         .introText {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 20px;      
+        }
+        .hiText{
+            animation-name: animationHi;
+          
+            position: relative;
+            animation-delay: 0.2s;
+            animation-duration: 0.7s;
+            animation-fill-mode: backwards;
+        }
+        .introContainer{
+            z-index: -1;
         }
 
         .introText h1 {
             font-size: 40px;
-            margin-bottom: 0px;
+            margin-bottom: 0px;     
+        }
+        .IamText{
+            animation-name: IamAnimation;
+            position: relative;
+            animation-delay: 0.4s;
+            animation-duration: 0.7s;
+            animation-fill-mode: backwards;
         }
 
         .introText p {
             font-size: 16px;
             margin-top: 5px;
+            animation-name: IamAnimation;
+            position: relative;
+            animation-delay: 1s;
+            animation-duration: 0.7s;
+            animation-fill-mode: backwards;
+            
+            
         }
 
         .blueText {
@@ -81,6 +122,7 @@
             width: 150px;
             height: 35px;
             margin-top: 20px;
+          
         }
 
         .github-button:hover {
@@ -122,6 +164,10 @@
             position: relative;
             overflow: hidden;
             margin-bottom: 60px;
+            animation-name: githubButtonAnimation;
+            animation-duration: 1s;
+            animation-delay: 1.4s;
+            animation-fill-mode: backwards;
 
         }
         .githubSpan{
@@ -158,7 +204,7 @@
 
             .introText {
                 text-align: left;
-                margin-right: 50px;
+                margin-right: 0px;
                 flex: 1;
             }
             .introText h1 {
@@ -170,7 +216,6 @@
                 margin-top: 20px;
             }
             .navItemsContainer {
-               
                 gap: 20px;
             }
         }
@@ -216,8 +261,8 @@
 
         <div class="introContainer">
             <div class="introText">
-                <h1>Hi,</h1>
-                <h1>I am <span class="blueText">Henry Arhinkorah</span></h1>
+                <h1 class="hiText">Hi,</h1>
+                <h1 class="IamText">I am <span class="blueText">Henry Arhinkorah</span></h1>
                 <p>A Frontend Developer from Accra, Ghana</p>
                 <p class="justify">As a dedicated frontend developer, I specialize in creating intuitive and visually appealing user interfaces. With a strong background in HTML, CSS, React Native and JavaScript, I bring your UI/UX ideas to life with clean and efficient code. My passion lies in designing seamless user experiences that engage and delight users. I am committed to staying at the forefront of technology and continuously improving my skills to deliver cutting-edge solutions for clients worldwide. Explore my portfolio to see how I can help turn your vision into reality.</p>
             </div>
