@@ -22,18 +22,19 @@
 }
 
 .navItems {
-    color: black;
+    color: rgb(121, 118, 118);
     margin-left: 20px;
     font-weight: normal;
     text-decoration: none;
     font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .navItemsContainer {
     flex-direction: row;
     display: flex;
     margin-right: 20px;
-    gap: 10px;
+    gap: 5px;
     right:20px;
     position: absolute;
 }
@@ -46,7 +47,7 @@
 
 
 .active {
-    text-decoration: underline;
+    text-decoration: none;
     color: blue;
 }
 
